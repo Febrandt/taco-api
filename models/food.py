@@ -3,7 +3,7 @@ from pydantic import BaseModel
 class Food(BaseModel):
     id: int
     name: str
-    moisture: float 
+    moisture: float | None
     kcal: int | None
     kJ: int | None
     protein: float | None
@@ -14,7 +14,6 @@ class Food(BaseModel):
     ashes: float | None
     calcium: float | None
     magnesium: float | None
-    taco_id: int 
     manganese: float | None
     phosphorus: float | None
     iron: float | None
