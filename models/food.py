@@ -3,31 +3,31 @@ from pydantic import BaseModel
 class Food(BaseModel):
     id: int
     name: str
-    moisture: float | str
-    kcal: int | str | None
-    kJ: int | str | None
-    protein: float | str | None
-    lipids: float | str | None
-    cholesterol: float | str | None
-    carbohydrate: float | str | None
-    fiber: float | str | None
-    ashes: float | str | None
-    calcium: float | str | None
-    magnesium: float | str | None
+    moisture: float 
+    kcal: int | None
+    kJ: int | None
+    protein: float | None
+    lipids: float | None
+    cholesterol: float | None
+    carbohydrate: float | None
+    fiber: float | None
+    ashes: float | None
+    calcium: float | None
+    magnesium: float | None
     taco_id: int 
-    manganese: float | str | None
-    phosphorus: float | str | None
-    iron: float | str | None
-    sodium: float | str | None
-    potassium: float | str | None
-    copper: float | str | None
-    zinc: float | str | None
-    retinol: float | str | None
-    re: float | str | None
-    rae: float | str | None
-    thiamine: float | str| None
-    riboflavin: float | str| None
-    pyridoxine: float | str| None
-    niacin: float | str| None
-    vitamin_c: float | str | None
+    manganese: float | None
+    phosphorus: float | None
+    iron: float | None
+    sodium: float | None
+    potassium: float | None
+    copper: float | None
+    zinc: float | None
+    retinol: float | None
+    re: float | None
+    rae: float | None
+    thiamine: float | None
+    riboflavin: float | None
+    pyridoxine: float | None
+    niacin: float | None
+    vitamin_c: float | None
     
