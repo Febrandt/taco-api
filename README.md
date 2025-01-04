@@ -1,12 +1,18 @@
-Search API Documentation
+TACO API Documentation
 ========================
 
-This endpoint allows you to search for foods based on their name and calorie range.
+Self contained api for taco (Tabela Brasileira de Composição de Alimentos).
 
-GET /search
------------
 
-### Query Parameters
+## Endpoints
+
+*Note:*  ***Fastapi*** *create aumatic documentations in endpoints* `/docs` *or* `/redoc`.
+
+
+### GET /search
+
+
+#### Query Parameters
 
 * **name** (required, `string`): The name or part of the name of the food item to search for.  
     Example: `apple` _Case-insensitive search._
@@ -26,7 +32,8 @@ The API returns a JSON array of food items that match the search criteria.
 
 #### Response Model
 
-\[
+```json
+[
     {
         "id": 1,
         "name": "Apple",
@@ -57,8 +64,8 @@ The API returns a JSON array of food items that match the search criteria.
         "niacin": 0.091,
         "vitamin_c": 4.6
     }
-\]
-    
+]
+```
 
 #### Status Codes
 
