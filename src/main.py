@@ -8,7 +8,7 @@ from json import loads
 from models.food import Food
 import pandas as pd
 
-TACO = pd.read_csv("data/taco.csv", encoding = 'utf8')
+TACO = pd.read_csv("src/data/taco.csv", encoding = 'utf8')
 
 limiter = Limiter(key_func=get_remote_address)
 app = FastAPI()
